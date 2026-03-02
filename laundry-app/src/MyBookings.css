@@ -1,0 +1,161 @@
+
+.my-bookings-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f4f6f8;
+}
+
+
+.my-bookings-content {
+  flex: 1;
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+
+.my-bookings-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.my-bookings-title {
+  font-size: 32px;
+  color: #2c3e50;
+}
+
+.my-bookings-subtitle {
+  color: #666;
+  font-size: 18px;
+}
+
+
+.phone-search-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.phone-input {
+  padding: 12px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-button {
+  padding: 12px 25px;
+  border: none;
+  background: #3498db;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background: #2980b9;
+}
+
+.search-button:disabled {
+  background: #aaa;
+}
+
+
+.error-message {
+  text-align: center;
+  background: #e74c3c;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.loading-message,
+.no-bookings-message {
+  text-align: center;
+  color: #666;
+  margin: 20px 0;
+}
+
+
+.bookings-list {
+  display: grid;
+  gap: 20px;
+}
+
+
+.booking-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.booking-service {
+  font-size: 22px;
+  color: #2c3e50;
+}
+
+.booking-status {
+  padding: 5px 12px;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+}
+
+
+.booking-details p {
+  margin: 6px 0;
+  color: #333;
+}
+
+
+@media (max-width: 768px) {
+  .my-bookings-content {
+    padding: 40px 15px;
+  }
+
+  .my-bookings-title {
+    font-size: 26px;
+  }
+
+  .phone-search-form {
+    flex-direction: column;
+  }
+
+  .phone-input,
+  .search-button {
+    width: 100%;
+  }
+
+  .booking-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .my-bookings-title {
+    font-size: 22px;
+  }
+
+  .booking-card {
+    padding: 15px;
+  }
+
+  .booking-service {
+    font-size: 18px;
+  }
+}

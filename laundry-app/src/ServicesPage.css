@@ -1,0 +1,344 @@
+.services-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+}
+
+.services-page-content {
+  flex: 1;
+  padding: 5rem 2rem;
+}
+
+.services-page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.services-page-title {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.services-page-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.services-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-card.popular-service {
+  border: 2px solid #3498db;
+  box-shadow: 0 4px 6px rgba(52, 152, 219, 0.2);
+}
+
+.service-card.popular-service:hover {
+  box-shadow: 0 8px 15px rgba(52, 152, 219, 0.3);
+}
+
+.service-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #e74c3c;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: #27ae60;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.service-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.service-name {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.service-price-container {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.service-price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #3498db;
+}
+
+.original-price {
+  font-size: 1.2rem;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.service-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  min-height: 60px;
+}
+
+.service-button {
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.service-button:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 991px) {
+  .services-page-content {
+    padding: 4rem 1.5rem;
+  }
+
+  .services-page-title {
+    font-size: 2.2rem;
+  }
+
+  .services-page-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .services-grid {
+    gap: 1.5rem;
+  }
+
+  .service-card {
+    padding: 1.8rem;
+  }
+
+  .service-badge,
+  .discount-badge {
+    font-size: 0.7rem;
+    padding: 0.35rem 0.7rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services-page-content {
+    padding: 3rem 1rem;
+  }
+
+  .services-page-title {
+    font-size: 2rem;
+  }
+
+  .services-page-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
+  }
+
+  .service-icon {
+    font-size: 3.5rem;
+  }
+
+  .service-name {
+    font-size: 1.3rem;
+  }
+
+  .service-price {
+    font-size: 1.6rem;
+  }
+
+  .original-price {
+    font-size: 1rem;
+  }
+
+  .service-badge,
+  .discount-badge {
+    top: 0.8rem;
+    font-size: 0.65rem;
+    padding: 0.3rem 0.6rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .services-page-content {
+    padding: 2.5rem 1rem;
+  }
+
+  .services-page-title {
+    font-size: 1.8rem;
+  }
+
+  .services-page-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .service-card {
+    padding: 1.3rem;
+  }
+
+  .service-icon {
+    font-size: 3rem;
+  }
+
+  .service-name {
+    font-size: 1.2rem;
+  }
+
+  .service-price {
+    font-size: 1.4rem;
+  }
+
+  .original-price {
+    font-size: 0.9rem;
+  }
+
+  .service-badge,
+  .discount-badge {
+    top: 0.6rem;
+    right: 0.6rem;
+    left: 0.6rem;
+    font-size: 0.6rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .services-page-content {
+    padding: 2rem 0.8rem;
+  }
+
+  .services-page-title {
+    font-size: 1.6rem;
+  }
+
+  .service-card {
+    padding: 1.2rem;
+  }
+
+  .service-icon {
+    font-size: 2.5rem;
+  }
+
+  .service-badge,
+  .discount-badge {
+    font-size: 0.55rem;
+    padding: 0.2rem 0.4rem;
+  }
+}
+
+@media screen and (max-width: 391px) {
+  .services-page-content {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .services-page-title {
+    font-size: 1.4rem;
+  }
+
+  .services-page-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .service-card {
+    padding: 1rem;
+  }
+
+  .service-icon {
+    font-size: 2.2rem;
+  }
+
+  .service-name {
+    font-size: 1.1rem;
+  }
+
+  .service-price {
+    font-size: 1.2rem;
+  }
+
+  .original-price {
+    font-size: 0.85rem;
+  }
+
+  .service-badge,
+  .discount-badge {
+    top: 0.5rem;
+    right: 0.5rem;
+    left: 0.5rem;
+    font-size: 0.55rem;
+    padding: 0.2rem 0.4rem;
+  }
+
+  .service-description {
+    font-size: 0.9rem;
+  }
+
+  .service-button {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+

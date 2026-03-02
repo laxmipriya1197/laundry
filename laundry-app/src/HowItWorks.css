@@ -1,0 +1,222 @@
+.how-it-works {
+  padding: 5rem 2rem;
+  background-color: white;
+}
+
+.how-it-works-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.how-it-works-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.how-it-works-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.step-card {
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+}
+
+.step-title {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.step-description {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 991px) {
+  .how-it-works {
+    padding: 4rem 1.5rem;
+  }
+
+  .how-it-works-title {
+    font-size: 2.2rem;
+  }
+
+  .how-it-works-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .steps-grid {
+    gap: 1.5rem;
+  }
+
+  .step-card {
+    padding: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .how-it-works {
+    padding: 3rem 1rem;
+  }
+
+  .how-it-works-title {
+    font-size: 2rem;
+  }
+
+  .how-it-works-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .steps-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .step-card {
+    padding: 1.5rem;
+  }
+
+  .step-number {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+
+  .step-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .how-it-works {
+    padding: 2.5rem 1rem;
+  }
+
+  .how-it-works-title {
+    font-size: 1.8rem;
+  }
+
+  .how-it-works-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .step-card {
+    padding: 1.3rem;
+  }
+
+  .step-number {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+  }
+
+  .step-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .how-it-works {
+    padding: 2rem 0.8rem;
+  }
+
+  .how-it-works-title {
+    font-size: 1.6rem;
+  }
+
+  .step-card {
+    padding: 1.2rem;
+  }
+
+  .step-number {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 391px) {
+  .how-it-works {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .how-it-works-title {
+    font-size: 1.4rem;
+  }
+
+  .how-it-works-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .step-card {
+    padding: 1rem;
+  }
+
+  .step-number {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .step-title {
+    font-size: 1.1rem;
+  }
+
+  .step-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .how-it-works-title {
+    font-size: 1.2rem;
+  }
+
+  .step-card {
+    padding: 0.8rem;
+  }
+
+  .step-number {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+}
+

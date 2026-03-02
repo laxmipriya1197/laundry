@@ -1,0 +1,124 @@
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:30px;
+  height: 100vh;          
+  width: 100%;
+  background: #95ace1;    
+}
+
+
+
+.app-title {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: center;
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+  
+
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: title-animation 0.8s ease forwards; 
+}
+
+.app-title span {
+  color: #38bdf8; 
+}
+
+
+@keyframes title-animation {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.form {
+ height:45%;
+ width:20%;          
+  position: relative;
+  display: flex;
+  flex-direction: column;
+ 
+  gap: 25px;
+  padding: 25px;
+  background: linear-gradient(to bottom, #0077be, #3b8df2);
+  border-radius: 12px;
+  overflow: hidden;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transform: rotateX(-10deg);
+  transition: all 0.3s ease-in-out;
+  box-shadow:
+    rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  animation: form-animation 0.5s ease-in-out;
+}
+
+@keyframes form-animation {
+  from {
+    transform: rotateX(-30deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+
+.input {
+  padding: 12px;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #3b8df2;
+  transition: all 0.3s ease-in-out;
+  box-shadow:
+    rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.input::placeholder {
+  color: #fff;
+}
+
+.input:hover,
+.input:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05) rotateY(10deg);
+  outline: none;
+}
+
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #3b8df2;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow:
+    rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+button:hover {
+  background-color: #0077be;
+  transform: scale(1.05);
+}

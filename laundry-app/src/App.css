@@ -1,0 +1,24 @@
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: #1976d2;
+padding: 12px 20px;
+}
+
+
+.logo {
+color: white;
+}
+
+
+.menu a {
+color: white;
+margin-right: 15px;
+text-decoration: none;
+}
+
+
+.menu button {
+background: #f44336;
+}
