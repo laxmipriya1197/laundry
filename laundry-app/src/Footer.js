@@ -15,9 +15,9 @@ const Footer = () => {
           
           <div className="footer-section">
             <h4 className="footer-heading">Contact Us</h4>
-            <p className="footer-info">📧 Email: info@sparkclean.com</p>
-            <p className="footer-info">📞 Phone: +1 (555) 123-4567</p>
-            <p className="footer-info">📍 Location: 123 Clean Street, City, State 12345</p>
+            <p className="footer-info"> Email: info@sparkclean.com</p>
+            <p className="footer-info"> Phone: +1 (555) 123-4567</p>
+            <p className="footer-info"> Location: 123 Clean Street, City, State 12345</p>
           </div>
           
           <div className="footer-section">
