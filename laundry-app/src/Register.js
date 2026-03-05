@@ -1,5 +1,5 @@
-import { db } from "./FirebaseConfig";
-import { collection, addDoc } from "firebase/firestore";
+import { auth } from "./FirebaseConfig";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Register.css";
@@ -18,14 +18,8 @@ function Register() {
     }
 
     try {
-      await addDoc(collection(db, "users"), {
-        email: email,
-        password: password,
-        createdAt: new Date(),
-      });
-
+      await createUserWithEmailAndPassword(auth, email, password);
       alert("Registration successful");
-      localStorage.setItem("registered", "true");
       navigate("/login");
     } catch (error) {
       alert(error.message);
@@ -34,12 +28,10 @@ function Register() {
 
   return (
     <div className="main">
-     
       <h1 className="app-title">
         Welcome to <span>Spark Cleaning & Laundry Service</span>
       </h1>
 
-    
       <form className="form" onSubmit={handleRegister}>
         <h2 style={{ textAlign: "center" }}>Register</h2>
 
